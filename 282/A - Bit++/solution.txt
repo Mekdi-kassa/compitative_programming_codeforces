@@ -1,0 +1,9 @@
+test_case = int(input())
+sum1 = 0
+for _ in range(test_case):
+    x = set(input())
+    if "+" in x:
+        sum1 += 1
+    elif "-" in x:
+        sum1 -= 1
+print(sum1)
