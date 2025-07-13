@@ -1,0 +1,10 @@
+s = input().strip()
+target = "hello"
+index = 0
+for char in s:
+    if index < len(target) and char == target[index]:
+        index += 1
+if index == len(target):
+    print("YES")
+else:
+    print("NO")
