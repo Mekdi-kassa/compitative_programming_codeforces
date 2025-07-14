@@ -1,0 +1,12 @@
+leng  = int(input())
+arr = list(map(int,input().split()))
+arr.sort()
+x = []
+count = 0
+sum1 = 0
+for i in range(leng-1 ,-1 , -1):
+    sum1 += arr[i]
+    count += 1
+    if sum(arr[:i]) < sum1:
+        x.append(count)
+print(min(x))
