@@ -1,0 +1,13 @@
+s = input()
+arr = []
+set1 ={'a','e','i','o','u','A','E','I','O','U','y','Y'}
+ 
+for i in s:
+    if i not in set1:
+        arr.append('.')
+        arr.append(i.lower())
+print("".join(arr))
+    
+        
+    
+    
