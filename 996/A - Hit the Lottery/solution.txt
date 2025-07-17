@@ -1,0 +1,30 @@
+num = int(input())
+count  = 0
+while num != 0:
+    if num >= 100:
+        x = num % 100
+        y = num // 100
+        count += y
+        num = x
+    elif num >= 20 and num < 100:
+        x = num % 20
+        y = num // 20
+        count += y
+        num = x
+    elif num >= 10 and num < 20:
+        x = num % 10
+        y = num // 10
+        count += y
+        num = x
+    elif num >= 5 and num < 10:
+        x = num % 5
+        y = num // 5
+        count += y
+        num = x
+    elif num >= 1 and num < 5:
+        x = num % 1
+        y = num // 1
+        count += y
+        num = x
+print(count)
+ 
