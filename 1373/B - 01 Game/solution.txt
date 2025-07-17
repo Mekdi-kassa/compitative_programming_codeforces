@@ -1,0 +1,11 @@
+leng = int(input())
+for _ in range(leng):
+    s = input()
+    count0 = s.count('0')
+    count1 = s.count('1')
+    move = min(count0 , count1)
+    if move % 2 == 1:
+        print('DA')
+    else:
+        print('NET')
+ 
