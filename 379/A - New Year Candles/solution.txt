@@ -1,0 +1,10 @@
+a, b = map(int, input().split())
+total = a
+burnt = a
+ 
+while burnt >= b:
+    new_candles = burnt // b
+    total += new_candles
+    burnt = burnt % b + new_candles
+ 
+print(total)
