@@ -1,0 +1,22 @@
+n = int(input())
+if n == 1:
+    print("I hate it")
+else:
+    s1 = "I hate "
+    s2 = "I love "
+    ans =""
+    for i in range(n):
+        if i % 2 == 0:
+            if i != n - 1:
+                ans += s1
+                ans += 'that '
+            else:
+                ans += s1
+        else:
+            if i != n-1:
+                ans += s2
+                ans += 'that '
+            else:
+                ans += s2
+    ans += "it"
+    print(ans)
