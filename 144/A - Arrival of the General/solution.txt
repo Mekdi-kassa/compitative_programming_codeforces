@@ -1,0 +1,12 @@
+n = int(input())
+a = list(map(int, input().split()))
+max_val = max(a)
+min_val = min(a)
+# Find the leftmost max and rightmost min
+left_max = a.index(max_val)
+right_min = len(a) - 1 - a[::-1].index(min_val)
+if left_max < right_min:
+    total = left_max + (n - 1 - right_min)
+else:
+    total = left_max + (n - 1 - right_min) - 1
+print(total)
