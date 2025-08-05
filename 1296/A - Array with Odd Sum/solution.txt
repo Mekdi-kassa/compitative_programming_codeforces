@@ -1,0 +1,14 @@
+n = int(input())
+for _ in range(n):
+    leng = int(input())
+    arr = list(map(int,input().split()))
+    total = sum(arr)
+    if total % 2 != 0:
+        print("YES")
+    else:
+        has_odd = any(x % 2 == 1 for x in arr)
+        has_even = any(x % 2 == 0 for x in arr)
+        if has_odd and has_even:
+            print("YES")
+        else:
+            print("NO")
