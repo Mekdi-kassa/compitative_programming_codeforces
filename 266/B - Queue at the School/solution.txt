@@ -1,0 +1,1 @@
+n, t = map(int, input().split())s = list(input().strip()) for _ in range(t):    swap_indices = []    i = 0    while i < n - 1:        if s[i] == 'B' and s[i + 1] == 'G':            swap_indices.append(i)            i += 1  # Skip the next position to avoid overlapping swaps        i += 1    for i in swap_indices:        s[i], s[i + 1] = s[i + 1], s[i] print(''.join(s))
