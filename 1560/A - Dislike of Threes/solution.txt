@@ -1,0 +1,1 @@
+n = int(input())arr = []for _ in range(n):    arr.append(int(input()))x = max(arr)ans = []j = 1while len(ans) < x:    if j % 10 != 3 and j % 3 != 0:        ans.append(j)    j += 1 for i in range(len(arr)):    print(ans[arr[i] - 1])
