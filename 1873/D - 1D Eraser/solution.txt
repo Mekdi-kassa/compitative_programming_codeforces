@@ -1,0 +1,1 @@
+n = int(input()) for _ in range(n):    m ,k = map(int , input().split())    s = input()    ans  = 0    i = 0    while i < m:        if s[i] == 'B':            ans += 1            i += k - 1        i += 1    print(ans)
