@@ -1,0 +1,1 @@
+n = int(input()) for _ in range(n):    s = input()    ans = ""    for i in range(len(s)):        if s[i] == 'p':            ans += 'q'        elif s[i] == 'q':            ans += 'p'        else:            ans += 'w'    print(ans[::-1])
