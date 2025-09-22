@@ -1,0 +1,1 @@
+n, k = map(int, input().split())y = list(map(int, input().split())) limit = 5 - kcount_valid = sum(1 for x in y if x <= limit)print(count_valid // 3)
