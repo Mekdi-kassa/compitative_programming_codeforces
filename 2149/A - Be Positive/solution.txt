@@ -1,0 +1,1 @@
+from collections import Countern = int(input())for _ in range(n):    m = int(input())    arr = list(map(int,input().split()))    count = Counter(arr)    total = 0    if count[-1] % 2 != 0:        total += 2        total += count[0]    print(total)
