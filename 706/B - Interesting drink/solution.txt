@@ -1,0 +1,1 @@
+import bisectn = int(input())arr = list(map(int,input().split()))m = int(input())arr.sort()for _ in range(m):    birr = int(input())    count = bisect.bisect_right(arr,birr)    print(count)
