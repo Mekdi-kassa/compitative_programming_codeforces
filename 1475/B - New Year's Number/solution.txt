@@ -1,0 +1,1 @@
+n = int(input())for _ in range(n):    num = int(input())    if num < 2020:        print("NO")        continue     rem = num % 2020    y = num - (rem * 2021)    if y >= 0 and y % 2020 == 0:        print("YES")    else:        print("NO")
