@@ -1,0 +1,1 @@
+n, k = map(int, input().split())available = 240 - kcount = 0time_used = 0 for i in range(1, n + 1):    if time_used + 5 * i <= available:        time_used += 5 * i        count += 1    else:        break print(count)
