@@ -1,0 +1,1 @@
+num = int(input())def is_almost_prime(n):    d = 2    ans = []    while d*d <= n:        while n % d == 0:            ans.append(d)            n //= d        d += 1    if n > 1:        ans.append(n)    return len(set(ans)) == 2count = 0for n in range(1,num + 1):    if is_almost_prime(n):        count += 1print(count)
