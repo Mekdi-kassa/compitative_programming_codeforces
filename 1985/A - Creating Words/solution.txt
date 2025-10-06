@@ -1,0 +1,1 @@
+t = int(input()) for _ in range(t):    a, b = input().split()        a_list = list(a)    b_list = list(b)    a_list[0], b_list[0] = b_list[0], a_list[0]        print(''.join(a_list), ''.join(b_list))
