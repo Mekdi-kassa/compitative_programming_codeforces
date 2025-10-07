@@ -1,0 +1,1 @@
+import mathn , m = map(int,input().split())arr1 = list(map(int ,input().split()))arr2 = list(map(int,input().split())) arr1.sort()gcd_diff = 0for i in range(1 , n):    gcd_diff = math.gcd(gcd_diff,arr1[i] - arr1[0]) res = []for j in range(m):    ans = math.gcd(arr1[0] + arr2[j],gcd_diff)    res.append(ans)print(*res)
