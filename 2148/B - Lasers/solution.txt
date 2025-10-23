@@ -1,0 +1,1 @@
+import bisectt = int(input())for _ in range(t):    n , m , x ,y = map(int,input().split())    a = list(map(int , input().split()))    b = list(map(int , input().split()))    # the horizontal line , vertial lines    a.sort()    b.sort()    hor_count = bisect.bisect_left(a , y)    ver_count = bisect.bisect_left(b , x)    print(ver_count + hor_count)
