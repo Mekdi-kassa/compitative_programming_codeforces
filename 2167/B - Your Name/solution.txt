@@ -1,1 +1,1 @@
-n = int(input())for _ in range(n):    m = int(input())    s1 , s2 = map(str , input().split())    set1 = set(s1)    set2 = set(s2)        flag = True    for s in set2:        if s1.count(s) < s2.count(s):            print("NO")            flag = False            break    if flag:        print("YES")
+n = int(input())for _ in range(n):    m = int(input())    s1 , s2 = map(str , input().split())    if sorted(s1) == sorted(s2):        print("YES")    else:        print("NO")
